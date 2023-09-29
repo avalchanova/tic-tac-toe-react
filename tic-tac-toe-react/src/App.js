@@ -14,6 +14,18 @@ const App = () => {
     }, [cells]); // everytime the array of cells changes (in this case the [cells] is the dependency), the useEffect
     //will run and the checkScore function will be evoked
 
+    const checkScore = () => {
+        const winningCombos = [
+            [0, 1, 2],
+            [3, 4, 5],
+            [6, 7, 8],
+            [0, 3, 6],
+            [1, 4, 7],
+            [2, 5, 8],
+            [0, 4, 8],
+            [2, 4, 6]
+        ];
+    };
     return (
         <div className="app">
             <div className="gameboard">
