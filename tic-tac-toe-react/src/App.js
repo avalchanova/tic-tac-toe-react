@@ -7,6 +7,7 @@ const App = () => {
     const [winningMessage, setWinningMessage] = useState(null);
 
     const message = 'It is ' + go + "'s turn.";
+    console.log(cells);
 
     return (
         <div className="app">
@@ -16,6 +17,7 @@ const App = () => {
                         key={index}
                         id={index}
                         cell={cell}
+                        cells={cells}
                         setCells={setCells}
                         go={go}
                         setGo={setGo}
