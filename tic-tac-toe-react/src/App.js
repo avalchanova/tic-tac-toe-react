@@ -1,5 +1,5 @@
 import Cell from './components/Cell.js';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 const App = () => {
     const [cells, setCells] = useState(['', '', '', '', '', '', '', '', '']);
@@ -8,6 +8,11 @@ const App = () => {
 
     const message = 'It is ' + go + "'s turn.";
     console.log(cells);
+
+    useEffect(() => {
+        checkScore();
+    }, [cells]); // everytime the array of cells changes (in this case the [cells] is the dependency), the useEffect
+    //will run and the checkScore function will be evoked
 
     return (
         <div className="app">
