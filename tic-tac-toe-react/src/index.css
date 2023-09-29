@@ -41,7 +41,8 @@
 .cross {
     width: 90px;
     height: 90px;
-    position: relative;   
+    position: relative; 
+    transform: rotate(45deg);  
 }
 
 .cross:before, .cross:after{
