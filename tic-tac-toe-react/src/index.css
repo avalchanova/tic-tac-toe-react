@@ -28,3 +28,38 @@
     justify-content: center;
     align-items: center;
 } 
+
+.circle {
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    border: 15px solid blue;
+    /* making sure the border is on the inside: */
+    box-sizing: border-box;
+}
+
+.cross {
+    width: 90px;
+    height: 90px;
+    position: relative;   
+}
+
+.cross:before, .cross:after{
+    content: "";
+    position: absolute;
+    background-color: red;
+}
+
+.cross:before {
+    left:50%;
+    width: 30%;
+    margin-left: -15%;
+    height: 100%;
+}
+
+.cross:after {
+    top:50%;
+    height: 30%;
+    margin-top: -15%;
+    width: 100%;
+}
