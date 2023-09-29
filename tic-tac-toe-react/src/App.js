@@ -25,7 +25,22 @@ const App = () => {
             [0, 4, 8],
             [2, 4, 6]
         ];
+        winningCombos.forEach((array) => {
+            let circleWins = array.every((cell) => cells[cell] === 'circle');
+            if (circleWins) {
+                setWinningMessage('Circle wins!');
+                return;
+            }
+        });
+        winningCombos.forEach((array) => {
+            let crossWins = array.every((cell) => cells[cell] === 'cross');
+            if (crossWins) {
+                setWinningMessage('Cross wins!');
+                return;
+            }
+        });
     };
+
     return (
         <div className="app">
             <div className="gameboard">
@@ -38,10 +53,12 @@ const App = () => {
                         setCells={setCells}
                         go={go}
                         setGo={setGo}
+                        winningMessage={winningMessage}
                     />
                 ))}
             </div>
-            <p>{message}</p>
+            <p>{winningMessage || message}</p>
+            {/* if there is a winning message then we show it otherwise we show message */}
         </div>
     );
 };
