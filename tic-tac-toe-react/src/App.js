@@ -64,3 +64,8 @@ const App = () => {
 };
 
 export default App;
+
+// TODO:
+// clear board after winning
+// do not block page when clicked on the same cell
+// instead display a warning message
