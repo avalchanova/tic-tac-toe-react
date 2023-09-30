@@ -1,3 +1,7 @@
+html{
+    background-color: #f4efeb;
+
+}
 .app {
     margin: 0;
     padding: 0;
@@ -33,7 +37,7 @@
     height: 90px;
     width: 90px;
     border-radius: 50%;
-    border: 15px solid blue;
+    border: 15px solid #513581;
     /* making sure the border is on the inside: */
     box-sizing: border-box;
 }
@@ -48,7 +52,7 @@
 .cross:before, .cross:after{
     content: "";
     position: absolute;
-    background-color: red;
+    background-color: #ccd6e7
 }
 
 .cross:before {
