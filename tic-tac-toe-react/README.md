@@ -9,13 +9,13 @@ exploring the power of React.
 
 ### Gameboard State:
 
-Our project boasts a responsive gameboard that intelligently tracks the status
-of each of the nine cells. Every move you make is carefully recorded, and you'll
+My project boasts a responsive gameboard that intelligently tracks the status of
+each of the nine cells. Every move you make is carefully recorded, and you'll
 always know the current state of the game.
 
 ### Player Messages:
 
-To keep you engaged, we've integrated two types of messages. One informs you
+To keep you engaged, I've integrated two types of messages. One informs you
 whose turn it is, ensuring you're always in the loop. The other announces the
 winner when the game is won, so you can revel in victory or graciously accept
 defeat.
@@ -34,13 +34,13 @@ and visually appealing.
 
 ### Handler Functions:
 
-Behind the scenes, we've crafted two robust handler functions. One manages the
+Behind the scenes, I've crafted two robust handler functions. One manages the
 click functionality of each cell, while the other assists by altering the
 element's class to reflect the player's choice.
 
 ### UseEffect for Scoring:
 
-As an added bonus, our project includes a useEffect hook that calculates the
+As an added bonus, my project includes a useEffect hook that calculates the
 score after every player's move. It keeps track of wins and ties, providing a
 comprehensive gaming experience.
 
